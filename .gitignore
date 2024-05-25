@@ -1,0 +1,9 @@
+# Ignore all JavaScript files
+*.js
+**/*.js
+
+# Don't ignore JavaScript files in the 'src' directory
+!src/*.js
+
+# Ignore specific files
+index.js

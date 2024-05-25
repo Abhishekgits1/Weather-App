@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen">
+
+    <div class="card bg-gradient-to-r from-teal-400 to-purple-700 text-white rounded-xl p-8 max-w-lg w-full mx-4 ">
+        <div class="search flex items-center space-x-4 mb-8">
+            <input type="text" placeholder="Enter City Name" spellcheck="false" class="flex-grow p-4 rounded-lg text-gray-700">
+            <button class="bg-white p-4 rounded-full"><img src="images/search.png" alt="Search" class="w-6 h-6"></button>
+            <button id="locationBtn" class="bg-white p-4 rounded-full"><img src="images/location.png" alt="Location" class="w-6 h-6"></button>
+        </div>
+
+        <div class="weather text-center">
+            <img src="images/rain.png" alt="Weather Icon" class="weather-icon w-32 mx-auto mb-4">
+            <h1 class="temp text-6xl font-bold">22°C</h1>
+            <h2 class="city text-4xl font-medium mt-2">New York</h2>
+            <div class="details flex justify-around mt-8">
+                <div class="col flex items-center space-x-2">
+                    <img src="images/humidity.png" alt="Humidity" class="w-10">
+                    <div>
+                        <p class="humidity text-2xl">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col flex items-center space-x-2">
+                    <img src="images/wind.png" alt="Wind" class="w-10">
+                    <div>
+                        <p class="wind text-2xl">15 KM</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
